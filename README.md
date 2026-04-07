@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Sabour Ghilas — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site web portfolio personnel, bilingue (FR/EN), dark mode.
 
-Currently, two official plugins are available:
+**URL live :** https://Ghilas-Sab.github.io/portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
 
-## Expanding the ESLint configuration
+| Technologie | Rôle |
+|---|---|
+| React 18 + TypeScript | Framework UI |
+| Vite 5 | Build tool |
+| Tailwind CSS 3 | Styling dark mode |
+| React Router (HashRouter) | Navigation SPA |
+| react-i18next | Internationalisation FR/EN |
+| GitHub Pages | Hébergement |
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Commandes
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm run dev       # Serveur de développement (localhost:5173/portfolio/)
+npm run build     # Build production (tsc + vite)
+npm run preview   # Prévisualiser le build localement
+npm run lint      # ESLint
+npm run format    # Prettier
+npm run deploy    # Build + déploiement sur GitHub Pages
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Déploiement
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Le script `npm run deploy` :
+1. Lance `npm run build` (TypeScript + Vite)
+2. Publie le dossier `dist/` sur la branche `gh-pages` via le package `gh-pages`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+La branche `gh-pages` est gérée automatiquement — ne pas la modifier manuellement.

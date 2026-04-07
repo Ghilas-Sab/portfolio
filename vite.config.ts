@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ghilas-portfolio/',
+  base: '/portfolio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
