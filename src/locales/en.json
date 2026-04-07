@@ -3,14 +3,21 @@
     "home": "Home",
     "projects": "Projects",
     "contact": "Contact",
-    "langLabel": "Language"
+    "langLabel": "Language",
+    "ariaLabel": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "lang": {
+    "switchLabel": "Language selection"
   },
   "hero": {
     "title": "M1 Computer Science Student — AI & Development",
     "tagline": "Curious, motivated and passionate about technology and innovative projects.",
     "cta_projects": "View my projects",
     "cta_contact": "Contact me",
-    "availability": "Available for work-study — September 2026"
+    "availability": "Available for work-study — September 2026",
+    "scrollHint": "scroll"
   },
   "about": {
     "title": "About",
@@ -32,6 +39,8 @@
     "filter_dev": "Dev",
     "domain_ai": "AI",
     "domain_dev": "Dev",
+    "filterLabel": "Filter projects",
+    "gridLabel": "Projects list",
     "p01": {
       "title": "Video Analysis — Internship",
       "description": "Movement detection and tracking using computer vision to extract the rhythm of dances. Completed during an internship at the University of Angers."
@@ -68,6 +77,9 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
   },
   "notFound": {
     "title": "Page not found",

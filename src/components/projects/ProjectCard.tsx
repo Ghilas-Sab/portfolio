@@ -9,34 +9,37 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { t } = useTranslation()
+  const title = t(project.titleKey)
 
   return (
-    <Card>
-      {/* Header: domain badge + period */}
-      <div className="flex items-center justify-between gap-2">
-        <Badge
-          label={t(`projects.domain_${project.domain}`)}
-          variant={project.domain === 'ai' ? 'ai' : 'dev'}
-        />
-        <span className="text-xs text-muted font-mono shrink-0">{project.period}</span>
-      </div>
+    <article aria-label={title}>
+      <Card className="h-full">
+        {/* Header: domain badge + period */}
+        <div className="flex items-center justify-between gap-2">
+          <Badge
+            label={t(`projects.domain_${project.domain}`)}
+            variant={project.domain === 'ai' ? 'ai' : 'dev'}
+          />
+          <span className="text-xs text-gray-500 font-mono shrink-0">{project.period}</span>
+        </div>
 
-      {/* Title */}
-      <h3 className="text-base font-semibold text-white leading-snug">
-        {t(project.titleKey)}
-      </h3>
+        {/* Title */}
+        <h3 className="text-base font-semibold text-white leading-snug">
+          {title}
+        </h3>
 
-      {/* Description */}
-      <p className="text-sm text-gray-400 leading-relaxed flex-1">
-        {t(project.descriptionKey)}
-      </p>
+        {/* Description */}
+        <p className="text-sm text-gray-400 leading-relaxed flex-1">
+          {t(project.descriptionKey)}
+        </p>
 
-      {/* Technologies */}
-      <div className="flex flex-wrap gap-1.5 pt-1 border-t border-white/5">
-        {project.technologies.map((tech) => (
-          <Badge key={tech} label={tech} variant="tech" />
-        ))}
-      </div>
-    </Card>
+        {/* Technologies */}
+        <div className="flex flex-wrap gap-1.5 pt-1 border-t border-white/5">
+          {project.technologies.map((tech) => (
+            <Badge key={tech} label={tech} variant="tech" />
+          ))}
+        </div>
+      </Card>
+    </article>
   )
 }

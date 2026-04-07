@@ -24,6 +24,11 @@ i18n
     },
     interpolation: { escapeValue: false },
   })
+  .then(() => {
+    // Sync HTML lang attribute with detected/stored language
+    const lang = i18n.language?.startsWith('fr') ? 'fr' : 'en'
+    document.documentElement.setAttribute('lang', lang)
+  })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
