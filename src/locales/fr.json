@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact",
+    "langLabel": "Langue"
+  },
+  "hero": {
+    "title": "Étudiant M1 Informatique — IA & Développement",
+    "tagline": "Curieux, motivé et passionné par la technologie et les projets innovants.",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter",
+    "availability": "Disponible en alternance — Septembre 2026"
+  },
+  "about": {
+    "title": "À propos",
+    "body": "Étudiant en Master 1 Informatique à l'Université d'Angers, je me spécialise en intelligence artificielle et développement logiciel. Passionné par les projets techniques ambitieux, je recherche une alternance à partir de septembre 2026."
+  },
+  "skills": {
+    "title": "Compétences",
+    "webDev": "Développement web",
+    "mobile": "Mobile",
+    "programming": "Programmation",
+    "dataAi": "Données & IA",
+    "databases": "Bases de données",
+    "tools": "Outils & Autres"
+  },
+  "projects": {
+    "title": "Projets",
+    "filter_all": "Tous",
+    "filter_ai": "IA",
+    "filter_dev": "Dev",
+    "domain_ai": "IA",
+    "domain_dev": "Dev",
+    "p01": {
+      "title": "Analyse vidéo — Stage",
+      "description": "Détection et suivi de mouvements par vision par ordinateur pour extraire le rythme de danses. Réalisé lors d'un stage à l'Université d'Angers."
+    },
+    "p02": {
+      "title": "Langage personnalisé",
+      "description": "Conception d'un langage de programmation avec compilateur complet, incluant analyse lexicale/syntaxique et bibliothèque standard."
+    },
+    "p03": {
+      "title": "Agent MCTS",
+      "description": "Développement d'un agent intelligent basé sur Monte Carlo Tree Search pour jouer à un jeu dont les règles sont inconnues a priori."
+    },
+    "p04": {
+      "title": "Pacman IA",
+      "description": "Refonte du jeu Pacman avec IA avancée : comportements de poursuite, fuite et encerclement, optimisation des déplacements en temps réel."
+    },
+    "p05": {
+      "title": "Détection de pannes — IA",
+      "description": "Système intelligent de diagnostic à partir d'une liste de faits, basé sur l'algorithme AO* et le raisonnement par règles."
+    },
+    "p06": {
+      "title": "Portfolio personnel",
+      "description": "Site portfolio bilingue (FR/EN) développé avec React, TypeScript et Tailwind CSS. Déployé sur GitHub Pages."
+    }
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "N'hésitez pas à me contacter pour toute opportunité d'alternance.",
+    "availability": "Disponible en alternance à partir de septembre 2026",
+    "email_label": "Email",
+    "phone_label": "Téléphone",
+    "location_label": "Localisation",
+    "license_label": "Permis"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "message": "La page que vous cherchez n'existe pas.",
+    "back": "Retour à l'accueil"
+  }
+}

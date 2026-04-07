@@ -1,0 +1,18 @@
+interface BadgeProps {
+  label: string
+  variant?: 'tech' | 'ai' | 'dev'
+}
+
+const variantClass: Record<NonNullable<BadgeProps['variant']>, string> = {
+  tech: 'bg-white/5 text-gray-300 border border-white/10',
+  ai: 'bg-accent/15 text-accent-light border border-accent/30',
+  dev: 'bg-blue-500/15 text-blue-300 border border-blue-500/30',
+}
+
+export default function Badge({ label, variant = 'tech' }: BadgeProps) {
+  return (
+    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${variantClass[variant]}`}>
+      {label}
+    </span>
+  )
+}

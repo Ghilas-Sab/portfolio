@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "title": "M1 Computer Science Student — AI & Development",
+    "tagline": "Curious, motivated and passionate about technology and innovative projects.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Contact me",
+    "availability": "Available for work-study — September 2026"
+  },
+  "about": {
+    "title": "About",
+    "body": "I am a Master's student in Computer Science at the University of Angers, specializing in artificial intelligence and software development. I am looking for a work-study position starting September 2026."
+  },
+  "skills": {
+    "title": "Skills",
+    "webDev": "Web Development",
+    "mobile": "Mobile",
+    "programming": "Programming",
+    "dataAi": "Data & AI",
+    "databases": "Databases",
+    "tools": "Tools & Others"
+  },
+  "projects": {
+    "title": "Projects",
+    "filter_all": "All",
+    "filter_ai": "AI",
+    "filter_dev": "Dev",
+    "domain_ai": "AI",
+    "domain_dev": "Dev",
+    "p01": {
+      "title": "Video Analysis — Internship",
+      "description": "Movement detection and tracking using computer vision to extract the rhythm of dances. Completed during an internship at the University of Angers."
+    },
+    "p02": {
+      "title": "Custom Programming Language",
+      "description": "Design of a programming language with a complete compiler, including lexical/syntactic analysis and a standard library."
+    },
+    "p03": {
+      "title": "MCTS Agent",
+      "description": "Development of an intelligent agent based on Monte Carlo Tree Search to play a game with unknown rules."
+    },
+    "p04": {
+      "title": "Pacman AI",
+      "description": "Pacman remake with advanced AI: chase, flee and surround behaviors, real-time movement optimization."
+    },
+    "p05": {
+      "title": "Fault Detection — AI",
+      "description": "Intelligent diagnostic system from a fact list, based on the AO* algorithm and rule-based reasoning."
+    },
+    "p06": {
+      "title": "Personal Portfolio",
+      "description": "Bilingual portfolio (FR/EN) built with React, TypeScript and Tailwind CSS. Deployed on GitHub Pages."
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Feel free to reach out for any work-study opportunity.",
+    "availability": "Available for a work-study position starting September 2026",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "license_label": "Driver's license"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist.",
+    "back": "Back to home"
+  }
+}
